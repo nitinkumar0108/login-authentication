@@ -1,0 +1,35 @@
+{% extends 'layouts.html' %}
+{% block content %}
+  
+    <div style="Background-color: red;">
+        <h1 class="text-center mt-5 bg-success">Welcome to place where you can enjoy free news!</h1>
+
+
+
+    </div>
+    <div class="container">
+    <br/>
+    <br/>
+    {% for i in case.articles %}
+    </div>
+    <br/>
+   
+
+
+    <div class="container border:active">
+        <h4 <strong> Author: </strong>{{i.author}}</h4>
+        <h5 <strong>Title : </strong>{{i.title}}</h5>
+        <h6 <strong> Description: </strong>{{i.description}}</h6>
+        <br/>
+        <img src={{i.urlToImage}} width="50%" height="400" alt="News App"</img>
+
+    </div>
+
+    {% endfor %}
+
+     
+   
+
+
+
+{% endblock %}
