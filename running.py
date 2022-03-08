@@ -162,15 +162,7 @@ def display():
         # print(data)
 
         return render_template('display.html',data=data,info="Registered")
-    # user1={'f':'Asif','l':'Iqbal','e':'asif@gmail.com','p':pbkdf2_sha256.hash('9098')}
-    # user2={'f':'Nitin','l':'Kumar','e':'nitin@gmail.com','p':pbkdf2_sha256.hash('5678')}
-    # user3={'f':'Sahil','l':'Bhardwaj','e':'sahil@gmail.com','p':pbkdf2_sha256.hash('5678')}
-    # users=[
-    #         user1,
-    #         user2,
-    #         user3
-    #       ]
-    # return render_template('display.html',users=users)
+  
 
 if __name__=='__main__':
     app.run(debug=True,port=5004)
